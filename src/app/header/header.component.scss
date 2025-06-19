@@ -1,0 +1,28 @@
+.custom-nav {
+  background-color: #01162f !important;
+  padding: 15px 0;
+  .navbar-toggler-icon {
+    filter: invert(1); // Make the hamburger icon white
+  }
+
+  .nav-link {
+    color: white !important;
+    font-weight: 500;
+    font-size: 18px;
+        margin-left: 25px;
+
+    &:hover,
+    &:focus {
+      color: #38bdf8 !important;
+    }
+
+    &.active {
+      color: #38bdf8 !important;
+      font-weight: 600;
+    }
+  }
+}
+
+.pr-18{
+  padding-right:18px !important;
+}

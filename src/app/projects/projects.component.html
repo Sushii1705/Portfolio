@@ -1,0 +1,31 @@
+<section class="projects py-5 bg-dark text-white" id="projects">
+  <div class="container">
+      <div class="section-heading text-center mb-5">
+        <h2 class="title text-white mt-3">My Projects</h2>
+      <div class="subtitle">
+        <span class="line"></span>
+        <span class="text">what i did</span>
+        <span class="line"></span>
+      </div>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-sm-6 col-md-4 cursor-pointer" *ngFor="let project of projects">
+        <div class="card h-100 text-center p-3 custom-card text-white border-0 shadow-sm project-card">
+          <div class="card-body">
+            <i class="fas fa-code fa-4x text-info mb-3"></i>
+            <h2 class="card-title fw-semibold">{{ project.name }}</h2>
+            <p class="card-text text-light">{{ project.tech }}</p>
+            <a
+              *ngIf="project.link"
+              [href]="project.link"
+              target="_blank"
+              class="btn btn-outline-light btn-sm mt-2"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

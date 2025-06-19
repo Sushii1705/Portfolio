@@ -1,0 +1,124 @@
+.about {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+
+  .max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #01162f;
+  }
+
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    .column {
+      flex: 1;
+    }
+
+    .left {
+      display: flex;
+      justify-content: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .right {
+      .text {
+        font-size: 24px;
+        font-weight: 600;
+        color: #01162f;
+        margin-bottom: 20px;
+
+        .typing-2 {
+          color: #38bdf8;
+        }
+
+        .typed-cursor {
+          color: #38bdf8;
+          animation: blink 0.7s infinite;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .download-cv {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 25px;
+        background-color: #01162f;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #e63946;
+        }
+      }
+    }
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+// Optional: Responsive
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+
+    .left,
+    .right {
+      text-align: center;
+    }
+
+    .right .text {
+      font-size: 20px;
+    }
+  }
+}
+
+ .subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 10px;
+
+    .text {
+      font-size: 16px;
+      color: #0ea5e9; // Tailwind's sky-500 color (or change to your theme)
+      font-weight: 600;
+      text-transform: lowercase;
+    }
+
+    .line {
+      flex: 1;
+      height: 2px;
+      background-color: #000;
+      max-width: 60px;
+    }
+  }

@@ -1,0 +1,42 @@
+.custom-card {
+  background-color: rgb(34, 34, 34);
+}
+section {
+    padding: 100px 0 !important;
+}
+.section-heading {
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .text {
+      font-size: 14px;
+      color: #0ea5e9;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .line {
+      flex: 1;
+      height: 2px;
+      background-color: #0ea5e9;
+      max-width: 60px;
+    }
+  }
+}
+.cursor-pointer {
+    cursor: pointer !important;
+  }
+.project-card:hover {
+  transform: translateY(-6px);
+  transition: transform 0.3s ease;
+  background-color: #0ea5e9;
+}

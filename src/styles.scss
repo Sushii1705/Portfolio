@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+.custom-btn{
+  display: inline-block;
+    background-color: #3fa6b7;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #3fa6b7;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+section {
+    padding: 100px 0 !important;
+}
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

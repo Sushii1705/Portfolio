@@ -1,0 +1,20 @@
+<section class="experience" id="experience">
+  <div class="section-heading">
+    <h2 class="title">My Background</h2>
+  </div>
+
+  <div class="timeline-container">
+    <ul class="timeline">
+      <li *ngFor="let item of experiences">
+        <div class="content">
+          <h3 class="designation">{{ item.title }}</h3>
+          <span class="company" *ngIf="item.company">{{ item.company }}</span>
+          <p>{{ item.description }}</p>
+          <span class="tech">{{ item.tech }}</span>
+        </div>
+        <span class="circle"></span>
+        <span class="date">{{ item.date }}</span>
+      </li>
+    </ul>
+  </div>
+</section>
